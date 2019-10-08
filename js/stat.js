@@ -42,7 +42,7 @@ window.renderStatistics = function (ctx, names, times) {
 
   for (var i = 0; i <= names.length; i++) {
     ctx.fillText(names[i], GIST_START_X + (GIST_GAP * i), CLOUD_HEIGHT - GAP);
-    ctx.fillRect(GIST_START_X + (GIST_GAP * i), GIST_START_Y, GIST_WIDTH, (Math.round(times[i]) *  GIST_MAX_HEIGHT) /  maxTime,);
+    ctx.fillRect(GIST_START_X + (GIST_GAP * i), GIST_START_Y, GIST_WIDTH, (Math.round(times[i]) *  GIST_MAX_HEIGHT) /  maxTime);
 
   }
 
