@@ -42,7 +42,7 @@ window.renderStatistics = function (ctx, names, times) {
   for (var i = 0; i <= names.length; i++) {
     ctx.fillStyle = '#000';
     ctx.fillText(names[i], GIST_START_X + (GIST_GAP * i), CLOUD_HEIGHT - GAP);
-    ctx.fillText(Math.round(times[i]), GIST_START_X + (GIST_GAP * i), -(Math.round(times[i]) * GIST_MAX_HEIGHT) / maxTime) - (GAP * 3);
+    ctx.fillText(Math.round(times[i]), GIST_START_X + (GIST_GAP * i), (CLOUD_HEIGHT - GAP * 4) - (Math.round(times[i]) * GIST_MAX_HEIGHT / maxTime));
     ctx.fillStyle = 'hsl(260, ' + (Math.random() * 100) + '%' + ' , 50%)';
     if (names[i] === 'Вы') {
       ctx.fillStyle = ' rgba(255, 0, 0, 1)';
