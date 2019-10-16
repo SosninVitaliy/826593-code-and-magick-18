@@ -50,3 +50,4 @@ for (var j = 0; j < wizards.length; j++) {
   fragment.appendChild(renderWizard(wizards[j]));
 }
 similarListElement.appendChild(fragment);
+// Проверочный
